@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  charge: 
+  amount: 1.5
+  date_due: 2014-12-22 14:42:24
+  is_paid: false
+  User_id: 
+
+two:
+  charge: 
+  amount: 1.5
+  date_due: 2014-12-22 14:42:24
+  is_paid: false
+  User_id: 

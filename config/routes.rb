@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
+  get 'users/index'
+
   root 'static_pages#home'
 
   get 'static_pages/about'
@@ -9,7 +13,9 @@ Rails.application.routes.draw do
 
   get 'home/contact'
 
-  devise_for :users
+  resources :users, only: [:show, :index] do
+    resources :bill
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
